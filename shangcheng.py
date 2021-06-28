@@ -57,10 +57,9 @@ while True:
         chose = int(chose)
         # 看商品是否存在
         if you[quan][0] == shop[chose][0]:
-            shop[chose][1] == you[quan][1]
-            print(shop[chose][1] == you[quan][1])
+            shop[chose][1] = you[quan][1]
         else:
-            shop[chose][1] == shop[chose][1]
+            shop[chose][1] = shop[chose][1]
         if chose > len(shop) - 1:
             print("您要的商品不存在！")
         else:
